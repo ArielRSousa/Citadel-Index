@@ -19,7 +19,6 @@ export default function Home() {
     queryKey: ['characters', page, search],
     queryFn: () => getCharacters(page, search),
     retry: 1,
-    keepPreviousData: true,
     staleTime: 5000, // Mantém os dados em cache por 5 segundos
   });
 
