@@ -38,8 +38,11 @@ export default function Home() {
       <div className="min-h-screen p-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold text-white mb-8 text-center">
-            Rick and Morty Characters
+            Citadel Index - Registro Multiversal
           </h1>
+          <p className="text-gray-300 text-center mb-8">
+            Base de dados oficial da Cidadela dos Ricks - Acesse informações de todos os Ricks e Mortys do multiverso
+          </p>
           <div className="bg-red-900/50 border border-red-500 rounded-md p-4 text-center">
             <p className="text-red-200">
               {error instanceof Error 
@@ -56,8 +59,11 @@ export default function Home() {
     <div className="min-h-screen p-8 relative z-10">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-white mb-8 text-center">
-          Rick and Morty Characters
+          Citadel Index - Registro Multiversal
         </h1>
+        <p className="text-gray-300 text-center mb-8">
+          Base de dados oficial da Cidadela dos Ricks - Acesse informações de todos os Ricks e Mortys do multiverso
+        </p>
 
         <div className="mb-8">
           <SearchInput onSearch={handleSearch} />
@@ -69,7 +75,7 @@ export default function Home() {
           <>
             {data?.results.length === 0 ? (
               <div className="text-center text-gray-400 py-8 bg-gray-800/50 rounded-lg border border-gray-700">
-                Nenhum personagem encontrado com esse nome.
+                Nenhum registro encontrado neste setor do multiverso.
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
